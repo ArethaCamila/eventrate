@@ -21,8 +21,8 @@ extern "C"
 using namespace std;
 
 char AEDLFILE[] = "DUNE_GLoBES.glb";
-string OUTFILEe = "eventrate_e_cmue_1.0e-27_2.0.dat";
-string OUTFILEmu = "eventrate_mu_cmeu_1.0e-27_2.0.dat";
+string OUTFILEe = "eventrate_e_cetau_1.0e-24_1.5.dat";
+string OUTFILEmu = "eventrate_mu_cetau_1.0e-24_1.5.dat";
 FILE * outstde = NULL;
 FILE * outstdmu = NULL;
 
@@ -90,10 +90,10 @@ int main(int argc, char * argv[])
 	double abs_a_tautau = 0;
 
 	double abs_c_ee = 0;
-	double abs_c_mue = 1.0e-27;//-2.0e-25 * 1.0e9;
-	double arg_c_mue = 1.5*M_PI;
-	double abs_c_etau = 0;
-	double arg_c_etau = 0;
+	double abs_c_mue = 0;//-2.0e-25 * 1.0e9;
+	double arg_c_mue = 0;
+	double abs_c_etau = 1.0e-24;
+	double arg_c_etau = 1.5*M_PI;
 	double abs_c_mumu = 0;//1.0e-22;
 	double abs_c_mutau = 0;
 	double arg_c_mutau = 0;
